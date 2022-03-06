@@ -85,17 +85,16 @@ public class SinkStack<T> : IReadOnlyCollection<T>
         else
         {
             _array[Count] = item;
+            Count++;
         }
-
-        Count++;
     }
 
     /// <summary>
     /// Add multiple items into stack
     /// </summary>
-    public void Push(params T[] items)
+    public void PushRange(params T[] items)
     {
-        this.PushRange(items);
+        this.PushRange(items.AsEnumerable());
     }
 
     /// <summary>
@@ -210,22 +209,6 @@ public class SinkStack<T> : IReadOnlyCollection<T>
     public bool Contains(T other, IEqualityComparer<T> comparer)
     {
         return Count != 0 && _array.Any(item => comparer.Equals(item, other));
-    }
-
-    /// <summary>
-    /// Determine if stack contains given item with given predicate for compare
-    /// </summary>
-    public bool Contains(T other, Func<T, T, bool> predicate)
-    {
-        return Count != 0 && _array.Any(item => predicate(item, other));
-    }
-
-    /// <summary>
-    /// Remove all items from stack
-    /// </summary>
-    public void Clear()
-    {
-        this._array = Array.Empty<T>();
     }
 
     public IEnumerator<T> GetEnumerator()
