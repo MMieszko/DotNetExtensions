@@ -1,7 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 
-namespace DotNetExtensions.Collections;
+namespace DotNetMore.Collections;
 
 /// <summary>
 /// Represents the collection with fixed size. When stack is full and new element is being added, the last will sink

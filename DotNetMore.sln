@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetExtensions", "DotNetExtensions\DotNetExtensions.csproj", "{1AD7C430-075F-4050-B0A1-BF1CA74A3849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetMore", "DotNetExtensions\DotNetMore.csproj", "{1AD7C430-075F-4050-B0A1-BF1CA74A3849}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetExtensions.Tests", "DotNetExtensions.Tests\DotNetExtensions.Tests.csproj", "{7A5749EF-9164-4BF0-B73F-A0FB798DC5E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetMore.Tests", "DotNetExtensions.Tests\DotNetMore.Tests.csproj", "{7A5749EF-9164-4BF0-B73F-A0FB798DC5E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

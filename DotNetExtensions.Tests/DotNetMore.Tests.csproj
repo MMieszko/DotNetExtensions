@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotNetExtensions\DotNetExtensions.csproj" />
+    <ProjectReference Include="..\DotNetExtensions\DotNetMore.csproj" />
   </ItemGroup>
 
 </Project>

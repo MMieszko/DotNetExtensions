@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using DotNetExtensions.Collections;
+using DotNetMore.Collections;
 using FluentAssertions;
 using Xunit;
 
-namespace DotNetExtensions.Tests.Collections;
+namespace DotNetMore.Tests.Collections;
 
 public class SinkStackTests
 {
