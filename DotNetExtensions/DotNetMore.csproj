@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>netstandard2.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<Authors>Mieszko Misztal</Authors>
@@ -12,10 +12,17 @@
 		<RepositoryType>git</RepositoryType>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>DotNetMore</PackageId>
+		<PackageVersion>1.0.2</PackageVersion>
+		<LangVersion>preview</LangVersion>
 	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" />
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
 
 	<ItemGroup>
 		<Folder Include="Collections\" />
+		<Folder Include="Extensions\" />
 	</ItemGroup>
 
 </Project>
